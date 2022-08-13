@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form - FreeCodeCamp</title>
+
+<body>
+  <h1 id="title">FreeCodeCamp - Survey Job Form</h1>
+  <p id="description">
+    <i>This is an example of a form to obtain the HTML / CSS certificate, delivered by
+    FreeCodeCamp. Thank you for viewing this page.</i>
+  </p>
+  <main class="contenedor">
+    <form id="survey-form">
+      <div class="form">
+        <label id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form">
+        <label id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form">
+        <label id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Enter your age (optional)" min="10" max="99" />
+      </div>
+      <div class="form">
+        <label>Choose current job level</label>
+        <select id="dropdown">
+          <option selected disabled>Select one option</option>
+          <option value="trainee">Trainee</option>
+          <option value="junior">Junior</option>
+          <option value="mid">Mid</option>
+          <option value="senior">Senior</option>
+        </select>
+      </div>
+      <div class="form">
+        <p>Choose your salary range</p>
+        <label><input type="radio" name="radio" value="low" />$10,000 - $20,000 / year</label>
+        <label><input type="radio" name="radio" value="medium" />$20,000 - $30,000 / year</label>
+        <label><input type="radio" name="radio" value="high" />$30,000 or more / year</label>
+      </div>
+      <div class="form">
+        <p>Select the technologies you know
+        </p>
+        <label><input type="checkbox" name="check" value="js" />JS</label>
+        <label><input type="checkbox" name="check" value="php" />PHP</label>
+        <label><input type="checkbox" name="check" value="rust" />RUST</label>
+        <label><input type="checkbox" name="check" value="java" />JAVA</label>
+        <label><input type="checkbox" name="check" value="python" />PYTHON</label>
+        <label><input type="checkbox" name="check" value="c#" />C#</label>
+        <label><input type="checkbox" name="check" value="c++" />C++</label>
+      </div>
+      <div class="form">
+        <p>If you have any comments, please enter them below</p>
+        <textarea name="" id="" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <div class="form">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Development by Gonzalo Meneses</p>
+  </footer>
+</body>
+
+</html>
